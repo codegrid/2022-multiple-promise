@@ -1,0 +1,23 @@
+{
+  "name": "2022-multiple-promise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codegrid/2022-multiple-promise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codegrid/2022-multiple-promise/issues"
+  },
+  "homepage": "https://github.com/codegrid/2022-multiple-promise#readme",
+  "dependencies": {
+    "http-server": "14.1.0"
+  }
+}
