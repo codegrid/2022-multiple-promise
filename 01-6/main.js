@@ -20,7 +20,9 @@ const fetchPerson = (name) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       if (!data[name])
-        return reject(new Error(`${name}のデータは存在しません`));
+        return reject(
+          new Error(`${name}のデータは存在しません`)
+        );
 
       resolve({
         name,
@@ -33,7 +35,9 @@ const fetchPerson = (name) => {
 const list = ["alice", "bob", "charly"];
 const main = async (list) => {
   try {
-    const data = await Promise.allSettled(list.map((slug) => fetchPerson(slug)));
+    const data = await Promise.allSettled(
+      list.map((slug) => fetchPerson(slug))
+    );
     showData(data);
   } catch (error) {
     showError(error);

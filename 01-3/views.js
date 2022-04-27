@@ -12,13 +12,18 @@ export const showData = (persons) => {
   `
     )
     .join("");
-  document.getElementById("result").innerHTML = `<ul>${html}</ul>`;
+  document.getElementById(
+    "result"
+  ).innerHTML = `<ul>${html}</ul>`;
 };
 
 export const showError = (error) => {
-  document.getElementById("result").innerHTML = error.message;
+  document.getElementById("result").innerHTML =
+    error.message;
 };
 
 export const showList = (list) => {
-  document.getElementById("list").innerHTML = list.join(", ");
-}
+  document.getElementById("list").innerHTML = list.join(
+    ", "
+  );
+};
