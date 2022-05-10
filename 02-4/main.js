@@ -6,7 +6,7 @@ const promiseC = new Promise((resolve) =>
   setTimeout(() => resolve("c"), 2000)
 );
 
-console.time("01-7 time");
+console.time("02-4 time");
 Promise.any([promiseA, promiseB, promiseC]).then((result) =>
-  console.timeLog("01-7 time", result)
+  console.timeLog("02-4 time", result)
 );

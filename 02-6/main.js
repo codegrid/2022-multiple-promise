@@ -6,7 +6,7 @@ const promiseC = new Promise((_, reject) =>
   setTimeout(() => reject("c failed"), 2000)
 );
 
-console.time("01-9 time");
+console.time("02-6 time");
 Promise.any([promiseA, promiseB, promiseC])
-  .then((result) => console.timeLog("01-9 time", result))
-  .catch((error) => console.timeLog("01-9 time", error.message));
+  .then((result) => console.timeLog("02-6 time", result))
+  .catch((error) => console.timeLog("02-6 time", error.message));

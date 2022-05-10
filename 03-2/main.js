@@ -6,7 +6,7 @@ const promiseC = new Promise((resolve) =>
   setTimeout(() => resolve("c"), 2000)
 );
 
-console.time("01-11 time");
+console.time("03-2 time");
 Promise.race([promiseA, promiseB, promiseC])
-  .then((result) => console.timeLog("01-11 time", result))
-  .catch((error) => console.timeLog("01-11 time", error.message));
+  .then((result) => console.timeLog("03-2 time", result))
+  .catch((error) => console.timeLog("03-2 time", error.message));

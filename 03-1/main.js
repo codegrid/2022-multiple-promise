@@ -6,9 +6,9 @@ const promiseC = new Promise((resolve) =>
   setTimeout(() => resolve("c"), 2000)
 );
 
-console.time("01-10 time");
+console.time("03-1 time");
 Promise.race([
   promiseA,
   promiseB,
   promiseC,
-]).then((result) => console.timeLog("01-10 time", result));
+]).then((result) => console.timeLog("03-1 time", result));

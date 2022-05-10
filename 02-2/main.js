@@ -6,9 +6,9 @@ const promiseC = new Promise((resolve) =>
   setTimeout(() => resolve("c"), 2000)
 );
 
-console.time("01-5 time");
+console.time("02-2 time");
 Promise.allSettled([promiseA, promiseB, promiseC])
-  .then((result) => console.timeLog("01-5 time", result))
+  .then((result) => console.timeLog("02-2 time", result))
   .catch((error) =>
-    console.timeLog("01-5 time", error.message)
+    console.timeLog("02-2 time", error.message)
   );
