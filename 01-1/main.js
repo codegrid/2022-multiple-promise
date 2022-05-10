@@ -6,6 +6,7 @@ const promiseC = new Promise((resolve) =>
   setTimeout(() => resolve("c"), 2000)
 );
 
+console.time("01-1 time");
 Promise.all([promiseA, promiseB, promiseC]).then((result) =>
-  console.log(result)
+  console.timeLog("01-1 time", result)
 );
