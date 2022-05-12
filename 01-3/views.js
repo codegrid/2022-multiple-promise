@@ -23,7 +23,5 @@ export const showError = (error) => {
 };
 
 export const showList = (list) => {
-  document
-    .getElementById("list")
-    .setAttribute("value", list.join(", "));
+  document.getElementById("list").value = list.join(", ");
 };

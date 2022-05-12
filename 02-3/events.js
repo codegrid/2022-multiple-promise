@@ -9,8 +9,6 @@ export const handleEvents = (main, defaultList) => {
 
       main(list);
       showList(list);
-
-      ev.currentTarget.name.value = "";
     },
     false
   );
