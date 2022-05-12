@@ -28,7 +28,5 @@ export const showError = (error) => {
 };
 
 export const showList = (list) => {
-  document.getElementById("list").innerHTML = list.join(
-    ", "
-  );
+  document.getElementById("list").setAttribute("value", list.join(", "));
 };

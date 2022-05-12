@@ -1,24 +1,21 @@
 import { showList } from "./views.js";
 
-export const handleEvents = (main, list) => {
+export const handleEvents = (main, defaultList) => {
   document.getElementById("form").addEventListener(
     "submit",
     (ev) => {
       ev.preventDefault();
-      const _list =
-        ev.currentTarget.name.value !== ""
-          ? [...list, ev.currentTarget.name.value]
-          : list;
+      const list = ev.currentTarget.list.value.split(", ");
 
-      main(_list);
-      showList(_list);
+      main(list);
+      showList(list);
 
-      ev.currentTarget.name.value = "";
+      ev.currentTarget.name.value = defaultList;
     },
     false
   );
 
   document.addEventListener("DOMContentLoaded", () => {
-    showList(list);
+    showList(defaultList);
   });
 };
