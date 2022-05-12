@@ -11,7 +11,7 @@ const fetchPerson = (name) => {
       age: 30,
       title: "designer",
     },
-    charly: {
+    charlie: {
       age: 28,
       title: "director",
     },
@@ -32,7 +32,7 @@ const fetchPerson = (name) => {
   });
 };
 
-const list = ["alice", "bob", "charly"];
+const list = ["alice", "bob", "charlie"];
 const main = async (list) => {
   try {
     const data = await Promise.allSettled(
