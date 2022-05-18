@@ -32,7 +32,7 @@ const fetchPerson = (name) => {
   });
 };
 
-const list = ["alice", "bob", "charlie"];
+const list = ["alice", "bob", "charlie", "david"];
 const main = async (list) => {
   try {
     const data = await Promise.allSettled(
