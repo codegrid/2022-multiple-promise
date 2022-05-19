@@ -5,7 +5,9 @@ export const handleEvents = (main, defaultList) => {
     "submit",
     (ev) => {
       ev.preventDefault();
-      const list = ev.currentTarget.list.value.split(",").trim();
+      const list = ev.currentTarget.list.value
+        .split(",")
+        .map((v) => v.trim());
 
       main(list);
       showList(list);
