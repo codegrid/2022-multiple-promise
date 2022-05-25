@@ -2,11 +2,11 @@ import { handleEvents } from "./events.js";
 import { showData, showError } from "./views.js";
 
 const fetchExtremelyHeavyData = (time) =>
-  new Promise((resolve) => setTimeout(resolve, time));
+  new Promise((resolve) => setTimeout(() => resolve("すごく大きいデータ"), time));
 
 const main = async (time) => {
   const timeout = new Promise((_, reject) =>
-    setTimeout(reject, 5000)
+    setTimeout(() => reject(new Error("タイムアウト")), 5000)
   );
 
   try {
