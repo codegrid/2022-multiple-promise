@@ -1,11 +1,11 @@
-export const showData = () => {
+export const showData = (data) => {
   document.getElementById("result").innerHTML =
-    "Succeeded!";
+    `Succeeded!: ${data}`;
   enableButton();
 };
 
-export const showError = () => {
-  document.getElementById("result").innerHTML = "Failed!";
+export const showError = (error) => {
+  document.getElementById("result").innerHTML = `Failed!: ${error.message}`;
   enableButton();
 };
 
